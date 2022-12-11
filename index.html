@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pips</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./script.js"></script>
 </head>
 <body>
@@ -15,8 +16,8 @@
   </header>
   <main>
     <div>
-      <p>
-        1lot=
+      <p class="lot">
+        1lot =
         <select name="lot" id="lot">
           <option value="1000">1000</option>
           <option value="10000">10000</option>
@@ -25,7 +26,7 @@
       </p>
       <p>
         レバレッジ
-        <input type="text" name="leverage" value="" data-options="1,3,25,100,1000"  class="leverage" />
+        <input type="text" name="leverage" value="" data-options="1,3,25,100,1000"  id="leverage" />
       </p>
     </div>
   </main>
