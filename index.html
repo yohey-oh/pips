@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pips</title>
+  <title>PIPs</title>
 
   <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
   <script src="./script.js"></script>
@@ -15,17 +15,36 @@
   </header>
   <main>
     <div>
-      <p>
+      <p class="1lot">
         1lot=
-        <select name="lot" id="lot">
+        <select name="1lot" id="1lot">
           <option value="1000">1000</option>
           <option value="10000">10000</option>
           <option value="100000">100000</option>
         </select>
       </p>
-      <p>
+      <p class="leverage">
         レバレッジ
-        <input type="text" name="leverage" value="" id="leverage" />
+        <input type="text" name="leverage" id="leverage" />
+      </p>
+    </div>
+    <div>
+      <p class="Nlot">
+        lot数
+        <input type="text" name="Nlot" id="Nlot" />lot
+      </p>
+      <p>
+        pips
+        <input type="number" name="pips" id="pips" />pips
+      </p>
+      <p>
+        <input type="button" name="submit" value="計算" id="submit" />
+      </p>
+    </div>
+    <div>
+      <p>
+        損益
+        <output name="ProfitLoss" id="ProfitLoss"></output>
       </p>
     </div>
   </main>
