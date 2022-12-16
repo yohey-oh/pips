@@ -15,12 +15,19 @@
   </header>
   <main>
     <div>
-      <p class="1lot">
-        1lot=
-        <select name="1lot" id="1lot">
+      <p class="lot">
+        1lot =
+        <select name="lot" id="lot">
           <option value="1000">1000</option>
-          <option value="10000">10000</option>
+          <option value="10000" selected>10000</option>
           <option value="100000">100000</option>
+        </select>
+      </p>
+      <p class="pip">
+        1pip =
+        <select name="pip" id="pip">
+          <option value="0.01" selected>0.01</option>
+          <option value="0.001">0.001</option>
         </select>
       </p>
       <p class="leverage">
@@ -35,10 +42,10 @@
       </p>
       <p>
         pips
-        <input type="number" name="pips" id="pips" />pips
+        <input type="number" name="Npips" id="Npips" />pips
       </p>
       <p>
-        <input type="button" name="submit" value="計算" id="submit" />
+        <input type="button" name="button" value="計算" id="button" />
       </p>
     </div>
     <div>
