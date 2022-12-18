@@ -1,4 +1,10 @@
 $(function() {
+  $.getJSON('https://www.gaitameonline.com/rateaj/getrate', function(data) {
+    var display = `open: ${data.open}<br>
+                   currencyPairCode: ${data.currencyPairCode}`
+    $(".display").html(display);
+  });
+
   $("#button").on('click', function() {
     const textLOT      = $("#lot option:selected").val();
     const textPIP      = $("#pip option:selected").val();
